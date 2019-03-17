@@ -1,6 +1,350 @@
 /*!
- * vue-material v1.0.0-beta-10.2
+ * vue-material v1.0.0-beta-10.2-radarsu
  * Made with <3 by marcosmoura 2019
  * Released under the MIT License.
  */
-!(function(e,t){var r,n;if("object"==typeof exports&&"object"==typeof module)module.exports=t(require("vue"));else if("function"==typeof define&&define.amd)define(["vue"],t);else{r=t("object"==typeof exports?require("vue"):e.Vue);for(n in r)("object"==typeof exports?exports:e)[n]=r[n]}})("undefined"!=typeof self?self:this,(function(e){return (function(e){function t(n){if(r[n])return r[n].exports;var o=r[n]={i:n,l:!1,exports:{}};return e[n].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var r={};return t.m=e,t.c=r,t.d=function(e,r,n){t.o(e,r)||Object.defineProperty(e,r,{configurable:!1,enumerable:!0,get:n})},t.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(r,"a",r),r},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=548)})({0:function(e,t){e.exports=function(e,t,r,n,o,u){var a,i,s,l,c,f=e=e||{},d=typeof e.default;return"object"!==d&&"function"!==d||(a=e,f=e.default),i="function"==typeof f?f.options:f,t&&(i.render=t.render,i.staticRenderFns=t.staticRenderFns,i._compiled=!0),r&&(i.functional=!0),o&&(i._scopeId=o),u?(s=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),n&&n.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(u)},i._ssrRegister=s):n&&(s=n),s&&(l=i.functional,c=l?i.render:i.beforeCreate,l?(i._injectStyles=s,i.render=function(e,t){return s.call(t),c(e,t)}):i.beforeCreate=c?[].concat(c,s):[s]),{esModule:a,exports:f,options:i}}},1:function(e,t,r){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var o,u,a,i;Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t={props:{mdTheme:null},computed:{$mdActiveTheme:function(){var e=u.default.enabled,t=u.default.getThemeName,r=u.default.getAncestorTheme;return e&&!1!==this.mdTheme?t(this.mdTheme||r(this)):null}}};return(0,i.default)(t,e)},o=r(4),u=n(o),a=r(6),i=n(a)},111:function(e,t,r){"use strict";function n(e){r(226)}var o,u,a,i,s,l,c,f,d,m;Object.defineProperty(t,"__esModule",{value:!0}),o=r(84),u=r.n(o);for(a in o)"default"!==a&&(function(e){r.d(t,e,(function(){return o[e]}))})(a);i=r(227),s=r(0),l=!1,c=n,f=null,d=null,m=s(u.a,i.a,l,c,f,d),t.default=m.exports},2:function(t,r){t.exports=e},226:function(e,t){},227:function(e,t,r){"use strict";var n=function(){var e=this,t=e.$createElement;return(e._self._c||t)("div",{staticClass:"md-toolbar",class:[e.$mdActiveTheme,"md-elevation-"+e.mdElevation]},[e._t("default")],2)},o=[],u={render:n,staticRenderFns:o};t.a=u},3:function(e,t,r){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var o,u,a,i,s;Object.defineProperty(t,"__esModule",{value:!0}),r(7),o=r(5),u=n(o),a=r(4),i=n(a),s=function(){var e=new u.default({ripple:!0,theming:{},locale:{startYear:1900,endYear:2099,dateFormat:"YYYY-MM-DD",days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],shortDays:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],shorterDays:["S","M","T","W","T","F","S"],months:["January","February","March","April","May","June","July","August","September","October","November","December"],shortMonths:["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"],shorterMonths:["J","F","M","A","M","Ju","Ju","A","Se","O","N","D"],firstDayOfAWeek:0},router:{linkActiveClass:"router-link-active"}});return Object.defineProperties(e.theming,{metaColors:{get:function(){return i.default.metaColors},set:function(e){i.default.metaColors=e}},theme:{get:function(){return i.default.theme},set:function(e){i.default.theme=e}},enabled:{get:function(){return i.default.enabled},set:function(e){i.default.enabled=e}}}),e},t.default=function(e){e.material||(e.material=s(),e.prototype.$material=e.material)}},4:function(e,t,r){"use strict";var n,o,u,a,i;Object.defineProperty(t,"__esModule",{value:!0}),n=r(2),o=(function(e){return e&&e.__esModule?e:{default:e}})(n),u=null,a=null,i=null,t.default=new o.default({data:function(){return{prefix:"md-theme-",theme:"default",enabled:!0,metaColors:!1}},computed:{themeTarget:function(){return!this.$isServer&&document.documentElement},fullThemeName:function(){return this.getThemeName()}},watch:{enabled:{immediate:!0,handler:function(){var e=this.fullThemeName,t=this.themeTarget,r=this.enabled;t&&(r?(t.classList.add(e),this.metaColors&&this.setHtmlMetaColors(e)):(t.classList.remove(e),this.metaColors&&this.setHtmlMetaColors()))}},theme:function(e,t){var r=this.getThemeName,n=this.themeTarget;e=r(e),n.classList.remove(r(t)),n.classList.add(e),this.metaColors&&this.setHtmlMetaColors(e)},metaColors:function(e){e?this.setHtmlMetaColors(this.fullThemeName):this.setHtmlMetaColors()}},methods:{getAncestorTheme:function(e){var t,r=this;return e?(t=e.mdTheme,(function e(n){if(n){var o=n.mdTheme,u=n.$parent;return o&&o!==t?o:e(u)}return r.theme})(e.$parent)):null},getThemeName:function(e){var t=e||this.theme;return this.prefix+t},setMicrosoftColors:function(e){u&&u.setAttribute("content",e)},setThemeColors:function(e){a&&a.setAttribute("content",e)},setMaskColors:function(e){i&&i.setAttribute("color",e)},setHtmlMetaColors:function(e){var t,r="#fff";e&&(t=window.getComputedStyle(document.documentElement),r=t.getPropertyValue("--"+e+"-primary")),r&&(this.setMicrosoftColors(r),this.setThemeColors(r),this.setMaskColors(r))}},mounted:function(){var e=this;u=document.querySelector('[name="msapplication-TileColor"]'),a=document.querySelector('[name="theme-color"]'),i=document.querySelector('[rel="mask-icon"]'),this.enabled&&this.metaColors&&window.addEventListener("load",(function(){e.setHtmlMetaColors(e.fullThemeName)}))}})},496:function(e,t,r){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}var o,u,a,i;Object.defineProperty(t,"__esModule",{value:!0}),o=r(3),u=n(o),a=r(111),i=n(a),t.default=function(e){(0,u.default)(e),e.component(i.default.name,i.default)}},5:function(e,t,r){"use strict";var n,o;Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t={};return o.default.util.defineReactive(t,"reactive",e),t.reactive},n=r(2),o=(function(e){return e&&e.__esModule?e:{default:e}})(n)},548:function(e,t,r){e.exports=r(496)},6:function(e,t,r){"use strict";function n(e){return!!e&&"object"==typeof e}function o(e){var t=Object.prototype.toString.call(e);return"[object RegExp]"===t||"[object Date]"===t||u(e)}function u(e){return e.$$typeof===m}function a(e){return Array.isArray(e)?[]:{}}function i(e,t){return!1!==t.clone&&t.isMergeableObject(e)?c(a(e),e,t):e}function s(e,t,r){return e.concat(t).map((function(e){return i(e,r)}))}function l(e,t,r){var n={};return r.isMergeableObject(e)&&Object.keys(e).forEach((function(t){n[t]=i(e[t],r)})),Object.keys(t).forEach((function(o){r.isMergeableObject(t[o])&&e[o]?n[o]=c(e[o],t[o],r):n[o]=i(t[o],r)})),n}function c(e,t,r){var n,o,u;return r=r||{},r.arrayMerge=r.arrayMerge||s,r.isMergeableObject=r.isMergeableObject||f,n=Array.isArray(t),o=Array.isArray(e),u=n===o,u?n?r.arrayMerge(e,t,r):l(e,t,r):i(t,r)}var f,d,m,h;Object.defineProperty(t,"__esModule",{value:!0}),f=function(e){return n(e)&&!o(e)},d="function"==typeof Symbol&&Symbol.for,m=d?Symbol.for("react.element"):60103,c.all=function(e,t){if(!Array.isArray(e))throw Error("first argument should be an array");return e.reduce((function(e,r){return c(e,r,t)}),{})},h=c,t.default=h},7:function(e,t){},84:function(e,t,r){"use strict";var n,o;Object.defineProperty(t,"__esModule",{value:!0}),n=r(1),o=(function(e){return e&&e.__esModule?e:{default:e}})(n),t.default=new o.default({name:"MdToolbar",props:{mdElevation:{type:[String,Number],default:4}}})}})}));
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("vue"));
+	else if(typeof define === 'function' && define.amd)
+		define(["vue"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("vue")) : factory(root["Vue"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(typeof self !== 'undefined' ? self : this, (function(__WEBPACK_EXTERNAL_MODULE_1__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 151);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 0:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./src/base/index.scss
+var base = __webpack_require__(2);
+
+// EXTERNAL MODULE: external {"root":"Vue","commonjs2":"vue","amd":"vue","commonjs":"vue"}
+var external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue__ = __webpack_require__(1);
+var external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default = /*#__PURE__*/__webpack_require__.n(external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue__);
+
+// CONCATENATED MODULE: ./src/core/utils/MdReactive.js
+
+
+/* harmony default export */ var MdReactive = (function (data) {
+  const Instance = {}
+
+  external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default.a.util.defineReactive(Instance, 'reactive', data)
+
+  return Instance.reactive
+});
+
+// CONCATENATED MODULE: ./src/core/MdTheme.js
+
+
+let msColor = null
+let themeColor = null
+let maskIcon = null
+
+/* harmony default export */ var MdTheme = (new external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default.a({
+  data: () => ({
+    prefix: 'md-theme-',
+    theme: 'default',
+    enabled: true,
+    metaColors: false
+  }),
+  computed: {
+    themeTarget () {
+      if (!this.$isServer) {
+        return document.documentElement
+      }
+
+      return false
+    },
+    fullThemeName () {
+      return this.getThemeName()
+    }
+  },
+  watch: {
+    enabled: {
+      immediate: true,
+      handler () {
+        const { fullThemeName, themeTarget, enabled } = this
+
+        if (themeTarget) {
+          if (enabled) {
+            themeTarget.classList.add(fullThemeName)
+            this.metaColors && this.setHtmlMetaColors(fullThemeName)
+          } else {
+            themeTarget.classList.remove(fullThemeName)
+            this.metaColors && this.setHtmlMetaColors()
+          }
+        }
+      }
+    },
+    theme (newTheme, oldTheme) {
+      const { getThemeName, themeTarget } = this
+
+      newTheme = getThemeName(newTheme)
+
+      themeTarget.classList.remove(getThemeName(oldTheme))
+      themeTarget.classList.add(newTheme)
+
+      if (this.metaColors) {
+        this.setHtmlMetaColors(newTheme)
+      }
+    },
+    metaColors (meta) {
+      if (meta) {
+        this.setHtmlMetaColors(this.fullThemeName)
+      } else {
+        this.setHtmlMetaColors()
+      }
+    }
+  },
+  methods: {
+    getAncestorTheme (component) {
+      if (component) {
+        const currentTheme = component.mdTheme
+        const getParentThemeName = (parent) => {
+          if (parent) {
+            const { mdTheme, $parent } = parent
+
+            if (mdTheme && mdTheme !== currentTheme) {
+              return mdTheme
+            }
+
+            return getParentThemeName($parent)
+          }
+
+          return this.theme
+        }
+
+        return getParentThemeName(component.$parent)
+      }
+
+      return null
+    },
+    getThemeName (theme) {
+      const themeName = theme || this.theme
+
+      return this.prefix + themeName
+    },
+    setMicrosoftColors (primaryColor) {
+      if (msColor) {
+        msColor.setAttribute('content', primaryColor)
+      }
+    },
+    setThemeColors (primaryColor) {
+      if (themeColor) {
+        themeColor.setAttribute('content', primaryColor)
+      }
+    },
+    setMaskColors (primaryColor) {
+      if (maskIcon) {
+        maskIcon.setAttribute('color', primaryColor)
+      }
+    },
+    setHtmlMetaColors (themeName) {
+      let primaryColor = '#fff'
+
+      if (themeName) {
+        const computedStyle = window.getComputedStyle(document.documentElement)
+
+        primaryColor = computedStyle.getPropertyValue(`--${themeName}-primary`)
+      }
+
+      if (primaryColor) {
+        this.setMicrosoftColors(primaryColor)
+        this.setThemeColors(primaryColor)
+        this.setMaskColors(primaryColor)
+      }
+    }
+  },
+  mounted () {
+    msColor = document.querySelector('[name="msapplication-TileColor"]')
+    themeColor = document.querySelector('[name="theme-color"]')
+    maskIcon = document.querySelector('[rel="mask-icon"]')
+
+    if (this.enabled && this.metaColors) {
+      window.addEventListener('load', () => {
+        this.setHtmlMetaColors(this.fullThemeName)
+      })
+    }
+  }
+}));
+
+// CONCATENATED MODULE: ./src/material.js
+
+
+
+
+const init = () => {
+  let material = new MdReactive({
+    ripple: true,
+    theming: {},
+    locale: {
+      startYear: 1900,
+      endYear: 2099,
+      dateFormat: 'YYYY-MM-DD',
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      shortDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      shorterDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      shortMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+      shorterMonths: ['J', 'F', 'M', 'A', 'M', 'Ju', 'Ju', 'A', 'Se', 'O', 'N', 'D'],
+      firstDayOfAWeek: 0
+    },
+    router: {
+      linkActiveClass: 'router-link-active'
+    }
+  })
+
+  Object.defineProperties(material.theming, {
+    metaColors: {
+      get: () => MdTheme.metaColors,
+      set (metaColors) {
+        MdTheme.metaColors = metaColors
+      }
+    },
+    theme: {
+      get: () => MdTheme.theme,
+      set (theme) {
+        MdTheme.theme = theme
+      }
+    },
+    enabled: {
+      get: () => MdTheme.enabled,
+      set (enabled) {
+        MdTheme.enabled = enabled
+      }
+    }
+  })
+
+  return material
+}
+
+/* harmony default export */ var src_material = __webpack_exports__["a"] = (Vue => {
+  if (!Vue.material) {
+    Vue.material = init()
+    Vue.prototype.$material = Vue.material
+  }
+});
+
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
+
+/***/ }),
+
+/***/ 109:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_material_material__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MdToolbar__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MdToolbar___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MdToolbar__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Vue => {
+  Object(__WEBPACK_IMPORTED_MODULE_0_vue_material_material__["a" /* default */])(Vue)
+  Vue.component(__WEBPACK_IMPORTED_MODULE_1__MdToolbar__["default"].name, __WEBPACK_IMPORTED_MODULE_1__MdToolbar__["default"])
+});
+
+
+/***/ }),
+
+/***/ 110:
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <template>\r\n|   <div class=\"md-toolbar\" :class=\"[$mdActiveTheme, `md-elevation-${mdElevation}`]\">\r\n|     <slot />\r");
+
+/***/ }),
+
+/***/ 151:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(109);
+
+
+/***/ }),
+
+/***/ 2:
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected character '@' (1:0)\nYou may need an appropriate loader to handle this file type.\n| @import \"~components/MdAnimation/variables\";\r\n| @import \"./base\";\r\n| @import \"./scrollbar\";\r");
+
+/***/ })
+
+/******/ });
+}));

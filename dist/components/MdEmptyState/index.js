@@ -1,6 +1,349 @@
 /*!
- * vue-material v1.0.0-beta-10.2
+ * vue-material v1.0.0-beta-10.2-radarsu
  * Made with <3 by marcosmoura 2019
  * Released under the MIT License.
  */
-!(function(e,t){var n,r;if("object"==typeof exports&&"object"==typeof module)module.exports=t(require("vue"));else if("function"==typeof define&&define.amd)define(["vue"],t);else{n=t("object"==typeof exports?require("vue"):e.Vue);for(r in n)("object"==typeof exports?exports:e)[r]=n[r]}})("undefined"!=typeof self?self:this,(function(e){return (function(e){function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}var n={};return t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{configurable:!1,enumerable:!0,get:r})},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},t.p="",t(t.s=530)})({0:function(e,t){e.exports=function(e,t,n,r,o,u){var a,s,i,l,c,d=e=e||{},f=typeof e.default;return"object"!==f&&"function"!==f||(a=e,d=e.default),s="function"==typeof d?d.options:d,t&&(s.render=t.render,s.staticRenderFns=t.staticRenderFns,s._compiled=!0),n&&(s.functional=!0),o&&(s._scopeId=o),u?(i=function(e){e=e||this.$vnode&&this.$vnode.ssrContext||this.parent&&this.parent.$vnode&&this.parent.$vnode.ssrContext,e||"undefined"==typeof __VUE_SSR_CONTEXT__||(e=__VUE_SSR_CONTEXT__),r&&r.call(this,e),e&&e._registeredComponents&&e._registeredComponents.add(u)},s._ssrRegister=i):r&&(i=r),i&&(l=s.functional,c=l?s.render:s.beforeCreate,l?(s._injectStyles=i,s.render=function(e,t){return i.call(t),c(e,t)}):s.beforeCreate=c?[].concat(c,i):[i]),{esModule:a,exports:d,options:s}}},1:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o,u,a,s;Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t={props:{mdTheme:null},computed:{$mdActiveTheme:function(){var e=u.default.enabled,t=u.default.getThemeName,n=u.default.getAncestorTheme;return e&&!1!==this.mdTheme?t(this.mdTheme||n(this)):null}}};return(0,s.default)(t,e)},o=n(4),u=r(o),a=n(6),s=r(a)},105:function(e,t,n){"use strict";function r(e){n(162)}var o,u,a,s,i,l,c,d,f,m;Object.defineProperty(t,"__esModule",{value:!0}),o=n(71),u=n.n(o);for(a in o)"default"!==a&&(function(e){n.d(t,e,(function(){return o[e]}))})(a);s=n(163),i=n(0),l=!1,c=r,d=null,f=null,m=i(u.a,s.a,l,c,d,f),t.default=m.exports},162:function(e,t){},163:function(e,t,n){"use strict";var r=function(){var e=this,t=e.$createElement,n=e._self._c||t;return n("transition",{attrs:{name:"md-empty-state",appear:""}},[n("div",{staticClass:"md-empty-state",class:[e.emptyStateClasses,e.$mdActiveTheme],style:e.emptyStateStyles},[n("div",{staticClass:"md-empty-state-container"},[e.mdIcon?[e.isAssetIcon(e.mdIcon)?n("md-icon",{staticClass:"md-empty-state-icon",attrs:{"md-src":e.mdIcon}}):n("md-icon",{staticClass:"md-empty-state-icon"},[e._v(e._s(e.mdIcon))])]:e._e(),e._v(" "),e.mdLabel?n("strong",{staticClass:"md-empty-state-label"},[e._v(e._s(e.mdLabel))]):e._e(),e._v(" "),e.mdDescription?n("p",{staticClass:"md-empty-state-description"},[e._v(e._s(e.mdDescription))]):e._e(),e._v(" "),e._t("default")],2)])])},o=[],u={render:r,staticRenderFns:o};t.a=u},2:function(t,n){t.exports=e},3:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o,u,a,s,i;Object.defineProperty(t,"__esModule",{value:!0}),n(7),o=n(5),u=r(o),a=n(4),s=r(a),i=function(){var e=new u.default({ripple:!0,theming:{},locale:{startYear:1900,endYear:2099,dateFormat:"YYYY-MM-DD",days:["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],shortDays:["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],shorterDays:["S","M","T","W","T","F","S"],months:["January","February","March","April","May","June","July","August","September","October","November","December"],shortMonths:["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"],shorterMonths:["J","F","M","A","M","Ju","Ju","A","Se","O","N","D"],firstDayOfAWeek:0},router:{linkActiveClass:"router-link-active"}});return Object.defineProperties(e.theming,{metaColors:{get:function(){return s.default.metaColors},set:function(e){s.default.metaColors=e}},theme:{get:function(){return s.default.theme},set:function(e){s.default.theme=e}},enabled:{get:function(){return s.default.enabled},set:function(e){s.default.enabled=e}}}),e},t.default=function(e){e.material||(e.material=i(),e.prototype.$material=e.material)}},372:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o,u,a,s;Object.defineProperty(t,"__esModule",{value:!0}),o=n(3),u=r(o),a=n(105),s=r(a),t.default=function(e){(0,u.default)(e),e.component(s.default.name,s.default)}},4:function(e,t,n){"use strict";var r,o,u,a,s;Object.defineProperty(t,"__esModule",{value:!0}),r=n(2),o=(function(e){return e&&e.__esModule?e:{default:e}})(r),u=null,a=null,s=null,t.default=new o.default({data:function(){return{prefix:"md-theme-",theme:"default",enabled:!0,metaColors:!1}},computed:{themeTarget:function(){return!this.$isServer&&document.documentElement},fullThemeName:function(){return this.getThemeName()}},watch:{enabled:{immediate:!0,handler:function(){var e=this.fullThemeName,t=this.themeTarget,n=this.enabled;t&&(n?(t.classList.add(e),this.metaColors&&this.setHtmlMetaColors(e)):(t.classList.remove(e),this.metaColors&&this.setHtmlMetaColors()))}},theme:function(e,t){var n=this.getThemeName,r=this.themeTarget;e=n(e),r.classList.remove(n(t)),r.classList.add(e),this.metaColors&&this.setHtmlMetaColors(e)},metaColors:function(e){e?this.setHtmlMetaColors(this.fullThemeName):this.setHtmlMetaColors()}},methods:{getAncestorTheme:function(e){var t,n=this;return e?(t=e.mdTheme,(function e(r){if(r){var o=r.mdTheme,u=r.$parent;return o&&o!==t?o:e(u)}return n.theme})(e.$parent)):null},getThemeName:function(e){var t=e||this.theme;return this.prefix+t},setMicrosoftColors:function(e){u&&u.setAttribute("content",e)},setThemeColors:function(e){a&&a.setAttribute("content",e)},setMaskColors:function(e){s&&s.setAttribute("color",e)},setHtmlMetaColors:function(e){var t,n="#fff";e&&(t=window.getComputedStyle(document.documentElement),n=t.getPropertyValue("--"+e+"-primary")),n&&(this.setMicrosoftColors(n),this.setThemeColors(n),this.setMaskColors(n))}},mounted:function(){var e=this;u=document.querySelector('[name="msapplication-TileColor"]'),a=document.querySelector('[name="theme-color"]'),s=document.querySelector('[rel="mask-icon"]'),this.enabled&&this.metaColors&&window.addEventListener("load",(function(){e.setHtmlMetaColors(e.fullThemeName)}))}})},43:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={methods:{isAssetIcon:function(e){return/\w+[\/\\.]\w+/.test(e)}}}},5:function(e,t,n){"use strict";var r,o;Object.defineProperty(t,"__esModule",{value:!0}),t.default=function(e){var t={};return o.default.util.defineReactive(t,"reactive",e),t.reactive},r=n(2),o=(function(e){return e&&e.__esModule?e:{default:e}})(r)},530:function(e,t,n){e.exports=n(372)},6:function(e,t,n){"use strict";function r(e){return!!e&&"object"==typeof e}function o(e){var t=Object.prototype.toString.call(e);return"[object RegExp]"===t||"[object Date]"===t||u(e)}function u(e){return e.$$typeof===m}function a(e){return Array.isArray(e)?[]:{}}function s(e,t){return!1!==t.clone&&t.isMergeableObject(e)?c(a(e),e,t):e}function i(e,t,n){return e.concat(t).map((function(e){return s(e,n)}))}function l(e,t,n){var r={};return n.isMergeableObject(e)&&Object.keys(e).forEach((function(t){r[t]=s(e[t],n)})),Object.keys(t).forEach((function(o){n.isMergeableObject(t[o])&&e[o]?r[o]=c(e[o],t[o],n):r[o]=s(t[o],n)})),r}function c(e,t,n){var r,o,u;return n=n||{},n.arrayMerge=n.arrayMerge||i,n.isMergeableObject=n.isMergeableObject||d,r=Array.isArray(t),o=Array.isArray(e),u=r===o,u?r?n.arrayMerge(e,t,n):l(e,t,n):s(t,n)}var d,f,m,p;Object.defineProperty(t,"__esModule",{value:!0}),d=function(e){return r(e)&&!o(e)},f="function"==typeof Symbol&&Symbol.for,m=f?Symbol.for("react.element"):60103,c.all=function(e,t){if(!Array.isArray(e))throw Error("first argument should be an array");return e.reduce((function(e,n){return c(e,n,t)}),{})},p=c,t.default=p},7:function(e,t){},71:function(e,t,n){"use strict";function r(e){return e&&e.__esModule?e:{default:e}}var o,u,a,s,i,l;Object.defineProperty(t,"__esModule",{value:!0}),o=n(1),u=r(o),a=n(97),s=r(a),i=n(43),l=r(i),t.default=new u.default({name:"MdEmptyState",mixins:[l.default],props:s.default,computed:{emptyStateClasses:function(){return{"md-rounded":this.mdRounded}},emptyStateStyles:function(){if(this.mdRounded){var e=this.mdSize+"px";return{width:e,height:e}}}}})},97:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0}),t.default={mdRounded:Boolean,mdSize:{type:Number,default:420},mdIcon:String,mdLabel:String,mdDescription:String}}})}));
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory(require("vue"));
+	else if(typeof define === 'function' && define.amd)
+		define(["vue"], factory);
+	else {
+		var a = typeof exports === 'object' ? factory(require("vue")) : factory(root["Vue"]);
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(typeof self !== 'undefined' ? self : this, (function(__WEBPACK_EXTERNAL_MODULE_1__) {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+/******/
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId]) {
+/******/ 			return installedModules[moduleId].exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			i: moduleId,
+/******/ 			l: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+/******/
+/******/ 		// Flag the module as loaded
+/******/ 		module.l = true;
+/******/
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/
+/******/
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+/******/
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+/******/
+/******/ 	// define getter function for harmony exports
+/******/ 	__webpack_require__.d = function(exports, name, getter) {
+/******/ 		if(!__webpack_require__.o(exports, name)) {
+/******/ 			Object.defineProperty(exports, name, {
+/******/ 				configurable: false,
+/******/ 				enumerable: true,
+/******/ 				get: getter
+/******/ 			});
+/******/ 		}
+/******/ 	};
+/******/
+/******/ 	// getDefaultExport function for compatibility with non-harmony modules
+/******/ 	__webpack_require__.n = function(module) {
+/******/ 		var getter = module && module.__esModule ?
+/******/ 			function getDefault() { return module['default']; } :
+/******/ 			function getModuleExports() { return module; };
+/******/ 		__webpack_require__.d(getter, 'a', getter);
+/******/ 		return getter;
+/******/ 	};
+/******/
+/******/ 	// Object.prototype.hasOwnProperty.call
+/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
+/******/
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+/******/
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(__webpack_require__.s = 133);
+/******/ })
+/************************************************************************/
+/******/ ({
+
+/***/ 0:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+
+// EXTERNAL MODULE: ./src/base/index.scss
+var base = __webpack_require__(2);
+
+// EXTERNAL MODULE: external {"root":"Vue","commonjs2":"vue","amd":"vue","commonjs":"vue"}
+var external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue__ = __webpack_require__(1);
+var external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default = /*#__PURE__*/__webpack_require__.n(external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue__);
+
+// CONCATENATED MODULE: ./src/core/utils/MdReactive.js
+
+
+/* harmony default export */ var MdReactive = (function (data) {
+  const Instance = {}
+
+  external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default.a.util.defineReactive(Instance, 'reactive', data)
+
+  return Instance.reactive
+});
+
+// CONCATENATED MODULE: ./src/core/MdTheme.js
+
+
+let msColor = null
+let themeColor = null
+let maskIcon = null
+
+/* harmony default export */ var MdTheme = (new external___root___Vue___commonjs2___vue___amd___vue___commonjs___vue___default.a({
+  data: () => ({
+    prefix: 'md-theme-',
+    theme: 'default',
+    enabled: true,
+    metaColors: false
+  }),
+  computed: {
+    themeTarget () {
+      if (!this.$isServer) {
+        return document.documentElement
+      }
+
+      return false
+    },
+    fullThemeName () {
+      return this.getThemeName()
+    }
+  },
+  watch: {
+    enabled: {
+      immediate: true,
+      handler () {
+        const { fullThemeName, themeTarget, enabled } = this
+
+        if (themeTarget) {
+          if (enabled) {
+            themeTarget.classList.add(fullThemeName)
+            this.metaColors && this.setHtmlMetaColors(fullThemeName)
+          } else {
+            themeTarget.classList.remove(fullThemeName)
+            this.metaColors && this.setHtmlMetaColors()
+          }
+        }
+      }
+    },
+    theme (newTheme, oldTheme) {
+      const { getThemeName, themeTarget } = this
+
+      newTheme = getThemeName(newTheme)
+
+      themeTarget.classList.remove(getThemeName(oldTheme))
+      themeTarget.classList.add(newTheme)
+
+      if (this.metaColors) {
+        this.setHtmlMetaColors(newTheme)
+      }
+    },
+    metaColors (meta) {
+      if (meta) {
+        this.setHtmlMetaColors(this.fullThemeName)
+      } else {
+        this.setHtmlMetaColors()
+      }
+    }
+  },
+  methods: {
+    getAncestorTheme (component) {
+      if (component) {
+        const currentTheme = component.mdTheme
+        const getParentThemeName = (parent) => {
+          if (parent) {
+            const { mdTheme, $parent } = parent
+
+            if (mdTheme && mdTheme !== currentTheme) {
+              return mdTheme
+            }
+
+            return getParentThemeName($parent)
+          }
+
+          return this.theme
+        }
+
+        return getParentThemeName(component.$parent)
+      }
+
+      return null
+    },
+    getThemeName (theme) {
+      const themeName = theme || this.theme
+
+      return this.prefix + themeName
+    },
+    setMicrosoftColors (primaryColor) {
+      if (msColor) {
+        msColor.setAttribute('content', primaryColor)
+      }
+    },
+    setThemeColors (primaryColor) {
+      if (themeColor) {
+        themeColor.setAttribute('content', primaryColor)
+      }
+    },
+    setMaskColors (primaryColor) {
+      if (maskIcon) {
+        maskIcon.setAttribute('color', primaryColor)
+      }
+    },
+    setHtmlMetaColors (themeName) {
+      let primaryColor = '#fff'
+
+      if (themeName) {
+        const computedStyle = window.getComputedStyle(document.documentElement)
+
+        primaryColor = computedStyle.getPropertyValue(`--${themeName}-primary`)
+      }
+
+      if (primaryColor) {
+        this.setMicrosoftColors(primaryColor)
+        this.setThemeColors(primaryColor)
+        this.setMaskColors(primaryColor)
+      }
+    }
+  },
+  mounted () {
+    msColor = document.querySelector('[name="msapplication-TileColor"]')
+    themeColor = document.querySelector('[name="theme-color"]')
+    maskIcon = document.querySelector('[rel="mask-icon"]')
+
+    if (this.enabled && this.metaColors) {
+      window.addEventListener('load', () => {
+        this.setHtmlMetaColors(this.fullThemeName)
+      })
+    }
+  }
+}));
+
+// CONCATENATED MODULE: ./src/material.js
+
+
+
+
+const init = () => {
+  let material = new MdReactive({
+    ripple: true,
+    theming: {},
+    locale: {
+      startYear: 1900,
+      endYear: 2099,
+      dateFormat: 'YYYY-MM-DD',
+      days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      shortDays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+      shorterDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
+      months: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
+      shortMonths: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sept', 'Oct', 'Nov', 'Dec'],
+      shorterMonths: ['J', 'F', 'M', 'A', 'M', 'Ju', 'Ju', 'A', 'Se', 'O', 'N', 'D'],
+      firstDayOfAWeek: 0
+    },
+    router: {
+      linkActiveClass: 'router-link-active'
+    }
+  })
+
+  Object.defineProperties(material.theming, {
+    metaColors: {
+      get: () => MdTheme.metaColors,
+      set (metaColors) {
+        MdTheme.metaColors = metaColors
+      }
+    },
+    theme: {
+      get: () => MdTheme.theme,
+      set (theme) {
+        MdTheme.theme = theme
+      }
+    },
+    enabled: {
+      get: () => MdTheme.enabled,
+      set (enabled) {
+        MdTheme.enabled = enabled
+      }
+    }
+  })
+
+  return material
+}
+
+/* harmony default export */ var src_material = __webpack_exports__["a"] = (Vue => {
+  if (!Vue.material) {
+    Vue.material = init()
+    Vue.prototype.$material = Vue.material
+  }
+});
+
+
+/***/ }),
+
+/***/ 1:
+/***/ (function(module, exports) {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE_1__;
+
+/***/ }),
+
+/***/ 133:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(54);
+
+
+/***/ }),
+
+/***/ 2:
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected character '@' (1:0)\nYou may need an appropriate loader to handle this file type.\n| @import \"~components/MdAnimation/variables\";\r\n| @import \"./base\";\r\n| @import \"./scrollbar\";\r");
+
+/***/ }),
+
+/***/ 54:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_material_material__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MdEmptyState__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__MdEmptyState___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__MdEmptyState__);
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (Vue => {
+  Object(__WEBPACK_IMPORTED_MODULE_0_vue_material_material__["a" /* default */])(Vue)
+  Vue.component(__WEBPACK_IMPORTED_MODULE_1__MdEmptyState__["default"].name, __WEBPACK_IMPORTED_MODULE_1__MdEmptyState__["default"])
+});
+
+/***/ }),
+
+/***/ 55:
+/***/ (function(module, exports) {
+
+throw new Error("Module parse failed: Unexpected token (1:0)\nYou may need an appropriate loader to handle this file type.\n| <template>\r\n|   <transition name=\"md-empty-state\" appear>\r\n|     <div class=\"md-empty-state\" :class=\"[emptyStateClasses, $mdActiveTheme]\" :style=\"emptyStateStyles\">\r");
+
+/***/ })
+
+/******/ });
+}));
